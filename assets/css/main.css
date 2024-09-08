@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #79c2d0; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -144,7 +144,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: lightblue;
+  background-color: #38598b;
   position: fixed;
   top: 0;
   left: 0;
@@ -260,13 +260,14 @@ h6 {
 
 .navmenu ul {
   list-style: none;
-  padding: 0 0 30px 0;
+  padding: 0 0 40px 0;
   margin: 0;
+  position: relative;
 }
 
 .navmenu a,
 .navmenu a:focus {
-  color: var(--nav-color);
+  color: black;
   padding: 15px 10px;
   font-family: var(--nav-font);
   font-size: 16px;
@@ -274,7 +275,7 @@ h6 {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.4s;
   width: 100%;
 }
 
@@ -716,6 +717,46 @@ section,
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Interests Section
+--------------------------------------------------------------*/
+.interests .features-item {
+  background-color: var(--surface-color);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  position: relative;
+}
+
+.interests .features-item i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 0;
+}
+
+.interests .features-item h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.interests .features-item h3 a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.interests .features-item:hover {
+  border-color: var(--accent-color);
+}
+
+.interests .features-item:hover h3 a {
+  color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
