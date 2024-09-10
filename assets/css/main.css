@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #79c2d0; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -144,7 +144,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: lightblue;
+  background: linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%);
   position: fixed;
   top: 0;
   left: 0;
@@ -260,13 +260,14 @@ h6 {
 
 .navmenu ul {
   list-style: none;
-  padding: 0 0 30px 0;
+  padding: 0 0 40px 0;
   margin: 0;
+  position: relative;
 }
 
 .navmenu a,
 .navmenu a:focus {
-  color: var(--nav-color);
+  color: #0e2431;
   padding: 15px 10px;
   font-family: var(--nav-font);
   font-size: 16px;
@@ -274,7 +275,7 @@ h6 {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.4s;
   width: 100%;
 }
 
@@ -284,61 +285,20 @@ h6 {
   margin-right: 10px;
 }
 
-.navmenu a .toggle-dropdown,
-.navmenu a:focus .toggle-dropdown {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: auto;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  flex-shrink: 0;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-}
 
-.navmenu a .toggle-dropdown:hover,
-.navmenu a:focus .toggle-dropdown:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-}
 
 .navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus {
-  color: var(--nav-hover-color);
+  color: #ffc60b;
 }
 
 .navmenu a:hover .navicon,
 .navmenu .active .navicon,
 .navmenu .active:focus .navicon {
-  color: var(--accent-color);
+  color: yellow;
 }
 
-.navmenu .active .toggle-dropdown,
-.navmenu .active:focus .toggle-dropdown {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  transform: rotate(180deg);
-}
-
-.navmenu .dropdown {
-  display: block;
-}
-
-.navmenu .dropdown a,
-.navmenu .dropdown a:focus {
-  color: --nav-dropdown-color;
-}
-
-.navmenu .dropdown a:hover,
-.navmenu .dropdown .active,
-.navmenu .dropdown .active:focus {
-  color: var(--nav-dropdown-hover-color);
-}
 
 .navmenu .dropdown ul {
   position: static;
@@ -579,11 +539,13 @@ section,
   margin: 0;
   font-size: 64px;
   font-weight: 700;
+  color: #ffa952;
 }
 
 .hero p {
   margin: 5px 0 0 0;
   font-size: 26px;
+  color:#ffe79a;
 }
 
 .hero p span {
@@ -685,7 +647,7 @@ section,
 # Skills Section
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 60px;
+  height: 90px;
   display: block;
   background: none;
   border-radius: 0;
@@ -716,6 +678,46 @@ section,
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Interests Section
+--------------------------------------------------------------*/
+.interests .features-item {
+  background-color: #537791;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  position: relative;
+}
+
+.interests .features-item i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 0;
+}
+
+.interests .features-item h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.interests .features-item h3 a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.interests .features-item:hover {
+  border-color: var(--accent-color);
+}
+
+.interests .features-item:hover h3 a {
+  color: #ffc60b;
 }
 
 /*--------------------------------------------------------------
