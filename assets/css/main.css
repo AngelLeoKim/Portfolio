@@ -144,7 +144,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: #38598b;
+  background: linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%);
   position: fixed;
   top: 0;
   left: 0;
@@ -267,7 +267,7 @@ h6 {
 
 .navmenu a,
 .navmenu a:focus {
-  color: black;
+  color: #0e2431;
   padding: 15px 10px;
   font-family: var(--nav-font);
   font-size: 16px;
@@ -285,61 +285,20 @@ h6 {
   margin-right: 10px;
 }
 
-.navmenu a .toggle-dropdown,
-.navmenu a:focus .toggle-dropdown {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: auto;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  flex-shrink: 0;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-}
 
-.navmenu a .toggle-dropdown:hover,
-.navmenu a:focus .toggle-dropdown:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-}
 
 .navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus {
-  color: var(--nav-hover-color);
+  color: #ffc60b;
 }
 
 .navmenu a:hover .navicon,
 .navmenu .active .navicon,
 .navmenu .active:focus .navicon {
-  color: var(--accent-color);
+  color: yellow;
 }
 
-.navmenu .active .toggle-dropdown,
-.navmenu .active:focus .toggle-dropdown {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  transform: rotate(180deg);
-}
-
-.navmenu .dropdown {
-  display: block;
-}
-
-.navmenu .dropdown a,
-.navmenu .dropdown a:focus {
-  color: --nav-dropdown-color;
-}
-
-.navmenu .dropdown a:hover,
-.navmenu .dropdown .active,
-.navmenu .dropdown .active:focus {
-  color: var(--nav-dropdown-hover-color);
-}
 
 .navmenu .dropdown ul {
   position: static;
@@ -580,11 +539,13 @@ section,
   margin: 0;
   font-size: 64px;
   font-weight: 700;
+  color: #ffa952;
 }
 
 .hero p {
   margin: 5px 0 0 0;
   font-size: 26px;
+  color:#ffe79a;
 }
 
 .hero p span {
@@ -723,7 +684,7 @@ section,
 # Interests Section
 --------------------------------------------------------------*/
 .interests .features-item {
-  background-color: var(--surface-color);
+  background-color: #537791;
   display: flex;
   align-items: center;
   padding: 20px;
@@ -756,7 +717,7 @@ section,
 }
 
 .interests .features-item:hover h3 a {
-  color: var(--accent-color);
+  color: #ffc60b;
 }
 
 /*--------------------------------------------------------------
